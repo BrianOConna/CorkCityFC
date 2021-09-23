@@ -1,88 +1,182 @@
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin: 0px -10px 0px -10px;
-    height: auto;
-    position: relative;
-    
-  }
+body {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  background-color: #FFFFFF;
+  color: #303030;
+  padding: 20px 0px 20px 100px;
+}
+
+.header-logo img {
+  width: 84px;
+  height: 84px;
+  margin-right: auto;
+}
+
+.header-link {
+  display: flex;
+  margin-left: auto;
+  padding: 25px 100px 0px 0px;
+}
+
+.header-link a {
+  text-decoration: none;
+  color: #303030;
+  font-size: 18px;  
+  padding: 10px;
+  font-family: 'Roboto', 'Arial';
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  color: #F9FAF8;
+  background-color: #303030;
+  align-items: center;
+  justify-content: center;
+  padding: 90px;
+}
+
+.hero-cta {
+  flex-basis: 2000px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.hero-cta p {
+  font-family: 'Roboto', arial;
+  opacity: 0.7;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #F9FAF8;
+  margin: 0;
+  font-family: 'Roboto', arial;
+}
+
+.hero button {
+  display: block;
+  text-align: center;
+  width: 110px;
+  border: none;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: 'Roboto', arial;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image img {
+  max-width: 90%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+/* Content */
+
+.content {
+  align-items: center;
+  text-align: center;
+  padding: 60px 0px 60px 0px;
+}
+
+.content-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   
-  /* this selector selects all divs inside of .flex-container */
-  .flex-container div {
-   
-    
-  }
+}
 
-  .flex-container .one {
-    background-color: #2e3654;
-    height: 100px;
-    
-  }
-  
-  /* only div.two is selected here */
-  .flex-container .two {
-    background-color: #1F2937;
-    height: 300px;    
-  }
+.content-info img {
+  width: 120px;
+  height: 120px;
+  padding: 15px;
+  border: 4px solid #303030;
+  border-radius: 15px;
+  margin: 5px 20px 0px 20px;
+}
 
-  .flex-container .three {
-    height: 300px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
+/* Banner */
 
-  }
+.imageContainer {
+  font-size: 400px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: auto;
+  background-image: url(https://cdn.extra.ie/wp-content/uploads/2020/05/27114215/987301.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
 
-  .information {
-      position: relative;
-      justify-content: space-between;
-      clear: both;
-      width: 140px;
-      height: 140px;
-      border-radius: 5px;
-      border: 2px solid blue;
-      background-color: white;
-  }
+/* Sign Up */
 
-  .flex-container .four {
-      background-color: #e5e7eb;
-      font-size: 36px;
-      font-style: italic;
-      font-weight: lighter;
-      color: #1f2937; 
-      height: 300px;
-  }
+.sign-up {
+  background-color: #303030;
+  color: white;
+  margin: 50px 200px;
+  padding: 10px 80px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border-color: none;
+}
 
-  span {
-    position: absolute; 
-    margin-top: 100px;
-    margin-left: 300px;
+.sign-up div {
+  flex: 1;
+}
 
-  }
+.signs-text {
+  text-align: left;
+}
 
-  .flex-container .five {
-      background-color: white;
-      height: 300px;
-      
-  }
+.signs-text p {
+  opacity: 0.7;
+  margin: 5px 30px 30px 50px;
+}
 
-  .blue-square {
-      position: relative;
-      text-align: left;
-      padding-left: 15%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #3882F6;
-      height: 40%;
-      width: 65%;
-      margin-left: 10%;
-      margin-top: 100px;
-      color: white;
-      border-radius: 10px;
-      
-  }
+h3 {
+  font-family: 'Roboto', arial;
+  padding: 0;
+  margin: 30px 0px 0px 50px;
+}
 
-  
+.signs-button button {
+  color: #fff;
+  font-family: 'Roboto', arial;
+  border-color: #fff;
+  border-radius: 8px;
+  border-color: #fff;
+  background-color: #303030;
+  padding: 5px 25px;
+  font-size: 15px;
+  float:right;
+}
 
- 
+/* Footer */
+
+.footer {
+  background-color: #303030;
+  color: #fff;
+  font-family: 'Roboto', arial;
+  text-align: center;
+}
